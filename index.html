@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>App Lista Compra</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container miestilo" id="contenedor">
+      <div class="row header justify-content-center mt-5" id="header">
+        <h1 id="titulo1">
+          <i class="material-icons" style="font-size:1em"> shopping_basket </i>
+          Lista de la Compra
+        </h1>
+      </div>
+
+      <form id="formulario" class="form mt-5">
+        <div id="botones" class="row">
+          <div class="col-12 col-md-5 mb-2">
+            <input
+              type="text"
+              id="articulo"
+              class="form-control"
+              placeholder="Indicar Artículo a Comprar"
+            />
+          </div>
+
+          <div class="col-6 col-md-2">
+            <input
+              type="text"
+              id="cantidad"
+              class="form-control"
+              placeholder="Cantidad"
+            />
+          </div>
+
+          <div class="col-6 col-md-2" er>
+            <select class="form-control" id="prioridad">
+              <option value="baja" selected>Baja</option>
+              <option value="media">Media</option>
+              <option value="urgente">Urgente</option>
+            </select>
+          </div>
+
+          <div class="col-6 col-md-1 mt-2">
+            <button id="agregar" class="btn btn-primary">
+              Añadir
+            </button>
+          </div>
+          <div class="col">
+            <button id="reset" class="btn btn-danger mt-2">
+              Limpiar
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div id="listacompra" class="listacompra" style="padding:10px;"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
